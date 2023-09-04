@@ -2,5 +2,8 @@
 int numberA = 3;
 int numberB = 5;
 int numberC = 8;
-if (numberA > numberB)
-Console.WriteLine(numberA);
+int max = numberC;
+if (numberA > max) max = numberA;
+if (numberB > max) max = numberB;
+if (numberC > max) max = numberC;
+Console.WriteLine(max);
