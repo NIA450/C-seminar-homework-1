@@ -20,7 +20,7 @@ int Prompt(string message)
     int result = Convert.ToInt32(value);
     return result;
 }
-int GetThirdRank(int number)
+//  int GetThirdRank(int number)  здесть мы делим на 10 введеное число, пока оно не станет трехзначным
 {
     while (number >999)
     {
@@ -30,7 +30,7 @@ int GetThirdRank(int number)
 }
 bool ValidateNumber(int number)
 {
-    if (number < 100)
+    // if (number < 100) здесть тоже проверяем число- в числе 3 цифры или меньше
     {
         Console.WriteLine("третьей цифры нет");
         return false;
